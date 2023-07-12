@@ -184,7 +184,7 @@ body {
   width: 320px;
   height: 300px;
   position: relative;
-  background: url(../img/bicycle.png) no-repeat right top;
+  background: url(../img/bicycle.png) no-repeat right bottom;
   mix-blend-mode: multiply;
   background-size: 100% auto;
 }
