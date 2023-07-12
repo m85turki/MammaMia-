@@ -382,8 +382,23 @@ body {
   }
 }
 
+.text-price{
+  color: #C6858C;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.totlal-price{
+  color: #960948;
+  font-size: 15pt;
+  font-weight: bold;
+}
 
 
+/* quantity-control */
+.quantity-control{
+  
+}
 
 
 

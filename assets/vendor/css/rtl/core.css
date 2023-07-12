@@ -109,10 +109,10 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: "Rubik", "Times New Roman", serif;
+  font-family: 'Cinzel', serif;
   font-weight: 500;
   line-height: 1.1;
-  color: #575756;
+  color: #960948;
 }
 
 h1, .h1 {
@@ -18258,13 +18258,13 @@ html:not([dir=rtl]) .menu-horizontal .menu-sub .menu-sub .menu-item .menu-link {
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-read,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-archive {
-  visibility: hidden;
+  visibility: visible;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-read span {
   background-color: #69809a;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:not(.marked-as-read) .dropdown-notifications-archive {
-  visibility: hidden;
+  visibility: visible;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover.marked-as-read .dropdown-notifications-read,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover.marked-as-read .dropdown-notifications-archive {
