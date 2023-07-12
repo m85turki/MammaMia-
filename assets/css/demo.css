@@ -155,11 +155,6 @@ body {
   background-size: cover;
 }
 
-@media (min-width: 992px){
-  body {
-    background-size: 70% auto;
-  }
-}
 
 .bx-sm {
   font-size: 1.85rem !important;
@@ -172,12 +167,27 @@ body {
 /* street-lanterns */
 .street-lanterns{
   width: 220px;
-  height: 260px;
+  height: 200px;
   position: relative;
   background: url(../img/street-lanterns.png) no-repeat right top;
   mix-blend-mode: darken;
-  background-size: 100% auto;
+  background-size: auto 100%;
+  transition: all 0.3s;
 }
+
+
+@media (min-width: 992px){
+  body {
+    background-size: 70% auto;
+  }
+}
+
+@media (min-width: 768px){
+  .street-lanterns{
+    height: 250px;
+  }
+}
+
 
 /* street-lanterns */
 .bicycle{
@@ -191,8 +201,19 @@ body {
 
 
 .logo{
-  width: 180px;
+  width: 155px;
+  transition: all 0.3s;
 }
+
+
+
+
+@media (min-width: 1200px){
+  .logo{
+    width: 175px;
+  }  
+}
+
 .logo img{
   width: 100%;
 }
@@ -230,14 +251,17 @@ body {
 }
 
 .minus-top{
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 
 /* video */
 .video{
   position: relative;
+  
+  max-width: 100%;
 }
+
 .video .video_mask {
   display: inline-block;
 
@@ -252,17 +276,21 @@ body {
 
   -webkit-mask-size: 100%;
   mask-size: 100%;
+
+  max-width: 100%;
 }
 
 .video .video_mask .video_holder {
   width: 500px;
-  height: 378px;
+  height: 255px;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .video .video_mask .video_holder video {
   position: relative;
-  top: 10px;
+  top: 0px;
+    height: 100%;
 }
 
 .mt-20{
@@ -282,6 +310,7 @@ body {
   position: relative;
   color: #960948;
   cursor: pointer;
+  font-size: 10pt;
 }
 
 .categories .item:hover{
@@ -290,8 +319,9 @@ body {
 
 .categories .item .icon-item{
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
+  transition: all 0.3s;
 }
 
 .categories .item .icon-item .icon-i{
@@ -317,20 +347,39 @@ body {
 .categories .item .icon-item .icon-i.hot-coco-icon{
   background-image: url(../img/products/hot-coco-icon.png);
 }
-
-
 /**/
-
-
 
 .categories .item .name-item{
   position: relative;
   border-bottom: solid 3px #960948;
   border-color: transparent;
+  text-wrap: nowrap;
 }
 
 .categories .item.selected .name-item{
   border-color: #960948;
+}
+
+@media (min-width: 380px){
+  .video .video_mask .video_holder {
+    height: 345px;
+  }
+}
+
+@media (min-width: 576px){
+  .categories .item{
+    font-size: 12pt;
+  }
+
+  .categories .item .icon-item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  .video .video_mask .video_holder {
+    height: 378px;
+  }
 }
 
 
