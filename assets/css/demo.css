@@ -397,8 +397,42 @@ body {
 
 /* quantity-control */
 .quantity-control{
-  
+  background: #960948;
+  border-radius: 7px;
+  color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 11pt;
 }
+
+.quantity-control.empty{
+  background: #C6858C;
+}
+
+.quantity-control .btn{
+  background: #960948;
+  color: #fff;
+}
+
+.quantity-control.empty .btn{
+  background: #C6858C;
+  color: #fff;
+}
+
+.quantity-control.empty .btn.minus{
+  display: none;
+}
+
+.quantity-control .btn:hover{
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.quantity-control .quantity-text{
+  color: #fff;
+  font-size: 11pt;
+}
+
 
 
 
