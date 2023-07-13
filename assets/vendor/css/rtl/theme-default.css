@@ -1235,8 +1235,8 @@ li.ui-timepicker-selected,
 }
 
 .bg-navbar-theme {
-  background-color: #f3f4f4 !important;
-  background: transparent !important;
+  background-color: #f3f4f4;
+  background: transparent;
   color: #575756;
 }
 .bg-navbar-theme .navbar-brand,

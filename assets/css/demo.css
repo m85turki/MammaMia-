@@ -151,7 +151,7 @@ li::selection  {
 }
 
 body {
-  background: url(../img/backgrounds/background.jpg) repeat top right;
+  background: url(../img/backgrounds/background.jpg) repeat top right fixed;
   background-size: cover;
 }
 
@@ -433,12 +433,59 @@ body {
   font-size: 11pt;
 }
 
+.listing{
+  background: transparent;
+  /*mix-blend-mode: multiply;*/
+}
+
+.bg-f{
+  background: url(../img/backgrounds/background.jpg) repeat top right fixed;
+  background-size: cover;
+}
+
+@media (min-width: 992px){
+  .bg-f{
+    background-size: 70% auto;
+  }
+  
+}
 
 
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal) .layout-navbar.navbar-elevated, .layout-navbar-fixed:not(.layout-menu-fixed) .layout-wrapper.layout-horizontal .layout-navbar.navbar-elevated {
+  box-shadow: 6px 4px 30px 0 rgba(38, 60, 85, 0.12);
+  box-shadow: none;
+}
 
 
+.sticky-top.bg-f{
+  top:19px;
+}
+
+.nav-link{
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+.layout-navbar {
+  height: 2.875rem;
+}
 
 
+.list-ul .card{
+  border-radius: 0.5rem !important;
+}
+
+.list-ul .list-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.list-ul .list-img img{
+  width: 100%;
+  height: auto;
+}
 
 
 
