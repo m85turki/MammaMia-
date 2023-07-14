@@ -58,9 +58,32 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
+
+    <script>
+      window.addEventListener('load', function() {
+          var loading = document.getElementById('loading');
+          loading.style.display = 'none';
+      });
+  </script>
+  
   </head>
 
   <body>
+    
+    <!-- Loading -->
+    <div id="loading">
+      <div  class="d-flex justify-content-center align-items-center h-100 w-100">
+      <div class="d-flex flex-column align-items-center">
+          <div class="logo mx-auto">
+              <img src="./assets/img/branding/logo.svg" alt="">
+          </div>
+          <div class="dots-loading mt-3"></div>
+        </div>
+      </div>
+      </div>
+
+
+
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
