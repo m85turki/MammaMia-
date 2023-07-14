@@ -455,26 +455,45 @@
           <div class="content-wrapper">
             <div class="container-fluid flex-grow-1">
 
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="javascript:void(0);">Mamma Mia</a>
-                  </li>
-                  <li class="breadcrumb-item">
-                    <a href="javascript:void(0);">drink</a>
-                  </li>
-                  <li class="breadcrumb-item active">lemon with mint</li>
-                </ol>
-              </nav>
-
-              <hr>
+              
 
               <div class="details">
 
+                <div class="sticky-top bg-f" style="top: 46px; padding-top: 20px; margin-top: -20px;">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="javascript:void(0);">Mamma Mia</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="javascript:void(0);">drink</a>
+                      </li>
+                      <li class="breadcrumb-item active">lemon with mint</li>
+                    </ol>
+                  </nav>
+    
+                  <hr>
+                </div>
+
+
 
               <div class="container-xxl px-0 px-md-3">
-              <div class="row g-3 list-ul py-3">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-8">
+                    <div class="card shadow rounded-4">
+                      <img class="w-100 rounded-4 overflow-x-hidden" src="./assets/img/products/1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <div class="text-price">3.25</div>
+                    <h5 class="mb-1">Lemon With Mint</h5>
+                  </div>
 
+                </div>
+
+
+
+              <div class="row g-3 list-ul py-3">
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 list-li">
                   <div class="card shadow rounded-2">
                     <div class="list-img d-flex justify-content-center align-items-center"
@@ -692,7 +711,7 @@
       // Add a scroll event listener to the window
       window.addEventListener("scroll", function () {
         // Check if the user has scrolled down
-        if (window.scrollY > 430) {
+        if (window.scrollY > 50) {
           // Add the class to the element
           element.classList.add("bg-f");
         } else {
