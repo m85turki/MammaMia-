@@ -571,6 +571,9 @@ hr{
   transition: filter .5s .5s ease-in;
 }
 
+.item.list-li{
+  height: 100%;
+}
 
 
 
@@ -585,10 +588,73 @@ hr{
   background-color: rgb(243 244 244 / 87%) !important;
 }
 
+.owl-stage{
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.owl-carousel .owl-item{
+  float: none !important;
+}
 
 
 
+.owl-dots{
+  display: none;
+}
 
+.owl-nav{
+  display: flex !important;
+  justify-content: space-between!important;
+  position: absolute !important;
+  width: 100%;
+  top: 35%;
+  pointer-events: none;
+}
+
+.owl-nav button{
+  background: #ffffff !important;
+    color: #960948 !important;
+    font-size: 1.813rem !important;
+    cursor: pointer !important;
+    border-radius: 50rem !important;
+    --bs-btn-active-border-color: transparent !important;
+    width: calc(2.2505rem + 2px) !important;
+    height: calc(2.2505rem + 2px) !important;
+    display: inline-flex !important;
+    flex-shrink: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    --bs-btn-font-weight: 400 !important;
+    --bs-btn-line-height: 2.6 !important;
+    --bs-btn-color: #575756 !important;
+    --bs-btn-bg: transparent !important;
+    --bs-btn-border-width: 1px !important;
+    --bs-btn-border-color: transparent !important;
+    --bs-btn-hover-border-color: transparent !important;
+    --bs-btn-box-shadow: 0 0.125rem 0.25rem rgba(147, 158, 170, 0.4) !important;
+    --bs-btn-disabled-opacity: 0.65 !important;
+    box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45) !important;
+    pointer-events: visible;
+}
+
+.owl-nav button span{
+  line-height: 1.5rem !important;
+  margin-top: -5px;
+}
+
+.drag-target{
+  pointer-events: none;
+}
+
+
+.owl-next{
+  margin-right: -10px;
+}
+
+.owl-prev{
+  margin-left: -10px;
+}
 
 
 
