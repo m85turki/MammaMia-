@@ -106,7 +106,13 @@ hr {
   opacity: 1;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6,
+h5, .h5,
+h4, .h4,
+h3, .h3,
+h2, .h2,
+h1, .h1
+{
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: 'Cinzel', serif;
@@ -114,6 +120,21 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.1;
   color: #960948;
 }
+
+[dir='rtl'] h6, [dir='rtl'] .h6,
+[dir='rtl'] h5, [dir='rtl'] .h5,
+[dir='rtl'] h4, [dir='rtl'] .h4,
+[dir='rtl'] h3, [dir='rtl'] .h3,
+[dir='rtl'] h2, [dir='rtl'] .h2,
+[dir='rtl'] h1, [dir='rtl'] .h1
+{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
 
 h1, .h1 {
   font-size: calc(1.3625rem + 1.35vw);
@@ -7964,8 +7985,8 @@ html:not([dir=rtl]) .input-group > .btn-group:last-child > .btn:not([class*=btn-
   --bs-position: end;
 }
 [dir=rtl] .dropdown-menu-end[data-bs-popper] {
-  left: 0;
-  right: auto;
+  right: 0;
+  left: auto;
 }
 @media (min-width: 576px) {
   [dir=rtl] .dropdown-menu-sm-start {

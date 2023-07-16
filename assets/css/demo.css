@@ -155,6 +155,11 @@ body {
   background-size: cover;
 }
 
+[dir="rtl"] body {
+  background: url(../img/backgrounds/background.rtl.jpg) repeat top left fixed;
+  background-size: cover;
+}
+
 
 .bx-sm {
   font-size: 1.85rem !important;
@@ -169,15 +174,25 @@ body {
   width: 220px;
   height: 200px;
   position: relative;
-  background: url(../img/street-lanterns.png) no-repeat right top;
+  background: url(../img/street-lanterns.jpg) no-repeat right top;
   mix-blend-mode: darken;
   background-size: auto 100%;
   transition: all 0.3s;
 }
 
+[dir="rtl"] .street-lanterns{
+  background: url(../img/street-lanterns.rtl.jpg) no-repeat left top;
+  mix-blend-mode: darken;
+    background-size: auto 100%;
+}
+
+
 
 @media (min-width: 992px){
   body {
+    background-size: 70% auto;
+  }
+  [dir="rtl"] body {
     background-size: 70% auto;
   }
 }
@@ -194,7 +209,13 @@ body {
   width: 320px;
   height: 300px;
   position: relative;
-  background: url(../img/bicycle.png) no-repeat right bottom;
+  background: url(../img/bicycle.jpg) no-repeat right bottom;
+  mix-blend-mode: multiply;
+  background-size: 100% auto;
+}
+
+[dir="rtl"] .bicycle{
+  background: url(../img/bicycle.rtl.jpg) no-repeat right bottom;
   mix-blend-mode: multiply;
   background-size: 100% auto;
 }
@@ -280,6 +301,24 @@ body {
   max-width: 100%;
 }
 
+[dir="rtl"] .video .video_mask {
+  display: inline-block;
+
+  -webkit-mask-image: url('../img/mask.rtl.png');
+  mask-image: url('../img/mask.rtl.png');
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+
+  max-width: 100%;
+}
+
 .video .video_mask .video_holder {
   width: 500px;
   height: 255px;
@@ -305,6 +344,16 @@ body {
   font-weight: 700;
   border-bottom: 1px solid #C2BBBB;
 }
+
+
+
+[dir='rtl'] .categories{
+  position: relative;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid #C2BBBB;
+}
+
 
 .categories .item{
   position: relative;
@@ -336,16 +385,16 @@ body {
 
 /**/
 .categories .item .icon-item .icon-i.food-icon{
-  background-image: url(../img/products/food-icon.png);
+  background-image: url(../img/products/food-icon.jpg);
 }
 .categories .item .icon-item .icon-i.appetizer-icon{
-  background-image: url(../img/products/appetizer-icon.png);
+  background-image: url(../img/products/appetizer-icon.jpg);
 }
 .categories .item .icon-item .icon-i.drink-icon{
-  background-image: url(../img/products/drink-icon.png);
+  background-image: url(../img/products/drink-icon.jpg);
 }
 .categories .item .icon-item .icon-i.hot-coco-icon{
-  background-image: url(../img/products/hot-coco-icon.png);
+  background-image: url(../img/products/hot-coco-icon.jpg);
 }
 /**/
 
@@ -443,12 +492,21 @@ body {
   background-size: cover;
 }
 
+[dir='rtl'] .bg-f{
+  background: url(../img/backgrounds/background.rtl.jpg) repeat top left fixed;
+  background-size: cover;
+}
+
 @media (min-width: 992px){
   .bg-f{
     background-size: 70% auto;
   }
-  
+
+  [dir='rtl'] .bg-f{
+    background-size: 70% auto;
+  }
 }
+
 
 
 .layout-navbar-fixed .layout-wrapper:not(.layout-horizontal) .layout-navbar.navbar-elevated, .layout-navbar-fixed:not(.layout-menu-fixed) .layout-wrapper.layout-horizontal .layout-navbar.navbar-elevated {
