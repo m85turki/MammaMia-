@@ -528,6 +528,9 @@ body {
   height: 2.875rem;
 }
 
+.list-ul{
+  direction: ltr !important;
+}
 
 .list-ul .card{
   border-radius: 0.5rem !important;
