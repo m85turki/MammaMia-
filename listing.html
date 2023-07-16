@@ -5,7 +5,7 @@
   class="light-style layout-navbar-fixed layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path=".././assets/"
+  data-assets-path="./assets/"
   data-template="vertical-menu-template-no-customizer">
   <head>
     <meta charset="utf-8" />
@@ -28,10 +28,15 @@
     rel="stylesheet" />
     
     
-    <!-- New for title Fonts -->
+    <!-- New for title Fonts English -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- New for title Fonts Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
@@ -45,7 +50,6 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
-    <link rel="stylesheet" href="./assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
@@ -55,13 +59,6 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
-
-    <script>
-      window.addEventListener('load', function() {
-          var loading = document.getElementById('loading');
-          loading.style.display = 'none';
-      });
-  </script>
   
   </head>
 
@@ -721,21 +718,17 @@
 
     <script src="./assets/vendor/libs/hammer/hammer.js"></script>
 
-    <script src="./assets/vendor/libs/i18n/i18n.js"></script>
     <script src="./assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
     <script src="./assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="./assets/js/dashboards-analytics.js"></script>
-
 
     <script>
 
@@ -753,7 +746,13 @@
           element.classList.remove("bg-f");
         }
       });
-
     </script>
+
+    <script>
+      window.addEventListener('load', function() {
+          var loading = document.getElementById('loading');
+          loading.style.display = 'none';
+      });
+  </script>
   </body>
 </html>
