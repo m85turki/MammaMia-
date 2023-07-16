@@ -717,13 +717,28 @@ hr{
   margin-left: -10px;
 }
 
+.flip-icon{
+  display: block;
+}
+
+[dir='rtl'] .flip-icon{
+  transform: scaleX(-1);
+  display: block;
+}
 
 
 
 
 
 
+.menu-item.bell-call{
+  background: #960948;
+  color: #fff !important;
+}
 
+.menu-item.bell-call .menu-link{
+  color: #fff !important;
+}
 
 
 
