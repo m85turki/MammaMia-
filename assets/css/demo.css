@@ -742,6 +742,48 @@ hr{
 
 
 
+.bell-call-fixed{
+  position: fixed;
+  right: -1px; bottom: 30px;
+  z-index: 9999;
+  border-radius: 0.5rem 0.0rem 0.0rem 0.5rem;
+  background: #fff;
+}
+
+.bell-call-fixed a.menu-link{
+  display: block;
+  background: #fff;
+  color: #960948 ;
+  border-radius: 0.5rem 0.0rem 0.0rem 0.5rem;
+  font-size: 12pt;
+  font-weight: 700;
+  font-family: 'Cinzel', serif;
+  transition: all 0.3s;
+}
+
+.bell-call-fixed a.menu-link:hover{
+  background: #960948;
+  color: #fff ;
+}
+
+[dir='rtl'] .bell-call-fixed{
+  left: -1px;
+  right: auto !important;
+  border-radius: 0.0rem 0.5rem 0.5rem 0.0rem;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 600;
+}
+
+[dir='rtl'] .bell-call-fixed a.menu-link{
+  border-radius: 0.0rem 0.5rem 0.5rem 0.0rem;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 600;
+
+  font-weight: 600;
+}
+
+
+
 
 
 
