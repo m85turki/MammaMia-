@@ -622,7 +622,7 @@ hr{
   100%   {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
 }
 
-.blur {
+.effect-blur {
   filter: blur(25px);
   animation-name: example;
   animation-duration: .5s;
@@ -786,6 +786,10 @@ hr{
 }
 
 
+.bell-call-fixed .menu-icon {
+  font-size: 1.7rem !important;
+}
+
 /* footer fixed */
 .footer-fixed{
   position: fixed;
@@ -900,4 +904,15 @@ hr{
 
 .owl-dots .owl-dot span{
   margin: 0px !important;
+}
+
+
+
+.bg-label-secondary {
+  background-color: #ffffff !important;
+  color: rgba(87, 87, 86, 0.75) !important;
+}
+
+.details .badge{
+  border-radius: 0.85rem;
 }

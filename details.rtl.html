@@ -70,7 +70,7 @@
   <body>
     <div class="bell-call-fixed shadow border">
       <a class="px-3 py-2 menu-link" href="#">
-        <i class="menu-icon tf-icons bx bxs-bell-ring "></i>
+        <i class="menu-icon tf-icons bx bxs-bell-ring mx-0"></i>
       </a>
     </div>
 
@@ -504,7 +504,7 @@
                 <div class="row gy-3 justify-content-center">
                   <div class="col-12 col-md-8">
                     <div class="card shadow overflow-x-hidden rounded-4">
-                      <div id="effectEle" class="details-img rounded-4 img-vh blur" style="background-image: url(./assets/img/products/1.jpg);"></div>
+                      <div id="effectEle" class="details-img rounded-4 img-vh effect-blur" style="background-image: url(./assets/img/products/1.jpg);"></div>
                     </div>
                   </div>
                   <div class="col-12 col-md-8">
@@ -551,7 +551,7 @@
                   <div class="owl-carousel list-ul">
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/1.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -577,7 +577,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/2.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -603,7 +603,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/3.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -629,7 +629,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/4.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -655,7 +655,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/5.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -681,7 +681,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/6.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -707,7 +707,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/6.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -733,7 +733,7 @@
                     </div>
                     <div class="item list-li pb-4">
                         <div class="card shadow rounded-2 stretch-group-v">
-                          <div class="list-img d-flex justify-content-center align-items-center"
+                          <div class="list-img d-flex justify-content-center align-items-center effect-blur"
                           style="background-image: url(./assets/img/products/6.jpg);"></div>
                           <div class="w-content stretch-side">
                             <div class="d-flex flex-column flex-grow-1 p-2 p-md-3 h-100">
@@ -762,6 +762,7 @@
               </div>
                       <!-- / owl content -->
         
+                
         
               </div>
               
@@ -867,9 +868,16 @@
   window.addEventListener('load', function() {
       var loading = document.getElementById('loading');
       loading.style.display = 'none';
-      var effectElement = document.getElementById('effectEle');
-      effectElement.classList.add('no-blur');
   });
+</script>
+
+<script>
+window.onload = function() {
+  var uploadContainers = document.querySelectorAll('.effect-blur');
+  for (var i = 0; i < uploadContainers.length; i++) {
+    uploadContainers[i].classList.add('no-blur');
+  }
+};
 </script>
 
   </body>
