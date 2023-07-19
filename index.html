@@ -70,6 +70,12 @@
       </a>
     </div>
 
+    <div class="footer-fixed d-flex align-items-center justify-content-center px-3 py-1">
+        <div class="">
+          Prices Are Subject to 16% Tax , 10% Service
+        </div>
+    </div>
+
     <!-- Loading -->
     <div id="loading">
       <div  class="d-flex justify-content-center align-items-center h-100 w-100">
@@ -101,7 +107,7 @@
           <ul class="menu-inner py-0">
 
               <!-- Apps & Pages -->
-              <li class="menu-header small text-uppercase mt-0"><span class="menu-header-text">Menu</span></li>
+              
               <li class="menu-item">
                 <a href="#" class="menu-link">
                   <div>All day breakfast</div>
@@ -193,14 +199,6 @@
                 <div>Add</div>
               </a>
             </li>
-            
-            <li class="menu-item bell-call mb-3 mt-auto">
-              <a href="#" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-bell-ring"></i>
-                <div>Bell call</div>
-              </a>
-            </li>
-
           </ul>
         </aside>
         <!-- / Menu -->
@@ -488,53 +486,54 @@
                 <div class="col-12 col-xl-6 order-1 order-xl-2 d-flex justify-content-center align-items-center pb-0">
                   <div>
                     <div class="logo mx-auto">
-                        <img src="./assets/img/branding/logo.svg" alt="">
+                      <img src="./assets/img/branding/logo.svg" alt="">
                     </div>
-    
-                <!-- Content -->
-                  <div class="categories d-flex flex-row align-items-stretch mt-4 flex-nowrap bg-f">
-                    <div class="item d-flex flex-column align-items-center mx-1 mx-md-2">
-                      <div class="icon-item mb-2">
-                        <div class="icon-i food-icon"></div>
+                    <!-- categories -->
+                    <div class="d-flex flex-column categories">
+                      <!-- Content -->
+                      <div class="tabs d-flex flex-row align-items-stretch mt-4 flex-nowrap bg-f">
+                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(1)">
+                          <div class="icon-item mb-2">
+                            <div class="icon-i food-icon"></div>
+                          </div>
+                          <div class="tab name-item mt-auto pb-2">
+                            FOOD
+                          </div>
+                        </div>
+                  
+                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(2)">
+                          <div class="icon-item mb-2">
+                            <div class="icon-i appetizer-icon"></div>
+                          </div>
+                          <div class="tab name-item mt-auto pb-2 active">
+                            APPETIZER
+                          </div>
+                        </div>
+                  
+                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(3)">
+                          <div class="icon-item mb-2">
+                            <div class="icon-i drink-icon"></div>
+                          </div>
+                          <div class="tab name-item mt-auto pb-2">
+                            DRINK
+                          </div>
+                        </div>
+                  
+                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(4)">
+                          <div class="icon-item mb-2">
+                            <div class="icon-i hot-coco-icon"></div>
+                          </div>
+                          <div class="tab name-item mt-auto pb-2">
+                            HOT COCO
+                          </div>
+                        </div>
                       </div>
-                      <div class="name-item mt-auto pb-2">
-                        FOOD
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="underline"></div>
                       </div>
+                      <!-- / Content -->
                     </div>
-                    
-                    <div class="item d-flex flex-column align-items-center mx-1 mx-md-2 selected">
-                      <div class="icon-item mb-2">
-                        <div class="icon-i appetizer-icon"></div>
-                      </div>
-                      <div class="name-item mt-auto pb-2">
-                        APPETIZER
-                      </div>
-                    </div>
-  
-                    <div class="item d-flex flex-column align-items-center mx-1 mx-md-2">
-                      <div class="icon-item mb-2">
-                        <div class="icon-i drink-icon"></div>
-                      </div>
-                      <div class="name-item mt-auto pb-2">
-                        DRINK
-                      </div>
-                    </div>
-  
-                    <div class="item d-flex flex-column align-items-center mx-1 mx-md-2">
-                      <div class="icon-item mb-2">
-                        <div class="icon-i hot-coco-icon"></div>
-                      </div>
-                      <div class="name-item mt-auto pb-2">
-                        HOT COCO
-                      </div>
-                    </div>
-  
-  
-  
-  
-  
-                  </div>
-                <!-- / Content -->
+                    <!-- / categories -->
                   </div>
   
                 </div>
@@ -617,5 +616,44 @@
           loading.style.display = 'none';
       });
   </script>
+
+    <!-- Tabs -->
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var activeTab = document.querySelector('.tab.active');
+            var underline = document.querySelector('.underline');
+
+            var activeTabRect = activeTab.getBoundingClientRect();
+            var underlineRect = underline.parentElement.getBoundingClientRect();
+
+            var underlineTransform = activeTabRect.left - underlineRect.left;
+            var underlineWidth = activeTabRect.width;
+
+            underline.style.transform = 'translateX(' + underlineTransform + 'px)';
+            underline.style.width = underlineWidth + 'px';
+        });
+
+        function changeTab(tabIndex) {
+            var tabs = document.getElementsByClassName('tab');
+            var underline = document.querySelector('.underline');
+
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+
+            tabs[tabIndex - 1].classList.add('active');
+
+            var activeTab = document.querySelector('.tab.active');
+            var activeTabRect = activeTab.getBoundingClientRect();
+            var underlineRect = underline.parentElement.getBoundingClientRect();
+
+            var underlineTransform = activeTabRect.left - underlineRect.left;
+            var underlineWidth = activeTabRect.width;
+
+            underline.style.transform = 'translateX(' + underlineTransform + 'px)';
+            underline.style.width = underlineWidth + 'px';
+        }
+    </script>
+
   </body>
 </html>

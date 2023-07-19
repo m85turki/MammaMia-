@@ -1396,7 +1396,7 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner > .menu-item.open:no
   background-color: #eceded;
 }
 .bg-menu-theme .menu-inner > .menu-item.active {
-  background-color: #eceded;
+  background-color: rgba(236, 237, 237, 0.70);
 }
 .layout-menu-collapsed:not(.layout-menu-hover):not(.layout-menu-expanded) .bg-menu-theme .menu-inner > .menu-item.active {
   background-color: #E4D7D9 !important;
