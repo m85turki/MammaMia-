@@ -513,11 +513,8 @@
                           <i class='bx bx-time me-2'></i>
                           5 Min
                         </span>
-                        <span class="badge bg-label-secondary me-2 d-flex align-items-center justify-content-center">
-                          <i class='bx bx-comment-dots me-2'></i>
-                          Add comments
-                        </span>
                         </div>
+                        
   
                     </div>
 
@@ -530,7 +527,7 @@
                   </div>
                   
                   <div class="col-12 col-md-8">
-                    <div class="row">
+                    <div class="row align-items-center">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
                       <div class="quantity-control">
@@ -546,6 +543,20 @@
                           </button>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-12 col-sm-auto col-md-auto col-lg-auto">
+                      <button type="button" class="btn btn-md btn-text-secondary waves-effect w-100 px-0" data-bs-toggle="modal" data-bs-target="#addComments">
+                        <span class="d-flex align-items-center justify-content-center">
+                          <i class="bx bx-comment-dots me-2"></i>
+                          Add comments
+                      </button>
+                    </div>
+                    <div class="col-12 col-sm-auto col-md-auto col-lg-auto">
+                      <button type="button" class="btn btn-md btn-text-secondary waves-effect w-100 px-0" data-bs-toggle="modal" data-bs-target="#rating">
+                        <span class="d-flex align-items-center justify-content-center">
+                          <span class="icon-neutral me-2 fs-4"></span>
+                          Rating
+                      </button>
                     </div>
                     </div>
                   </div>
@@ -800,6 +811,245 @@
     </div>
     <!-- / Layout wrapper -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+              <!-- Comment Modal -->
+              <div class="modal fade" id="addComments" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-simple modal-edit-user">
+                  <div class="modal-content p-3 p-md-5">
+                    <div class="modal-body p-0 p-0 ">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="text-center mb-4">
+                        <h3>Comment</h3>
+                        <p>Updating user details will receive a privacy audit.</p>
+                      </div>
+                      <form id="editUserForm" class="row g-3" onsubmit="return false">
+
+                        <div class="col-12 col-md-12">
+                          <label class="form-label" for="basic-icon-default-message">Add comments</label>
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-message2" class="input-group-text">
+                              <i class="bx bx-comment"></i>
+                            </span>
+                            <textarea
+                              id="basic-icon-default-message"
+                              class="form-control"
+                              placeholder="Add comments"
+                              rows="5"
+                              aria-label="Add comments"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-input" />
+                            <span class="switch-toggle-slider">
+                              <span class="switch-on"></span>
+                              <span class="switch-off"></span>
+                            </span>
+                            <span class="switch-label">Spicy</span>
+                          </label>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                          <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                          <button
+                            type="reset"
+                            class="btn btn-label-secondary"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                            Cancel
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ Comment Modal -->
+
+              <!-- Comment Modal -->
+              <div class="modal fade" id="rating" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-simple modal-edit-user">
+                  <div class="modal-content p-3 p-md-5">
+                    <div class="modal-body p-0 p-0 ">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="text-center mb-4">
+                        <h3>Rating</h3>
+                        <p>Updating user details will receive a privacy audit.</p>
+                      </div>
+                      <form id="editUserForm" class="row g-3" onsubmit="return false">
+
+
+                        
+
+                        <!-- Rating form  -->
+                        <div class="row gy-3">
+                          <div class="col-md">
+                            <div class="form-check custom-option custom-option-icon radio-wrapper">
+                              <label class="form-check-label custom-option-content" for="customRadioIcon1">
+                                <span class="custom-option-body">
+                                  <span class="icon-dissatisfied fs-1"></span>
+                                  <span class="custom-option-title">Dissatisfied</span>
+                                  <small>Text here.</small>
+                                </span>
+                                <input
+                                onchange="onRadioChange(this)"
+                                  name="customRadioIcon"
+                                  class="form-check-input"
+                                  type="radio"
+                                  value=""
+                                  id="customRadioIcon1"
+                                  checked />
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check custom-option custom-option-icon radio-wrapper">
+                              <label class="form-check-label custom-option-content" for="customRadioIcon2">
+                                <span class="custom-option-body">
+                                  <span class="icon-neutral fs-1"></span>
+                                  <span class="custom-option-title">Neutral</span>
+                                  <small>Text here.</small>
+                                </span>
+                                <input
+                                onchange="onRadioChange(this)"
+                                  name="customRadioIcon"
+                                  class="form-check-input"
+                                  type="radio"
+                                  value=""
+                                  id="customRadioIcon2"
+                                  checked />
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check custom-option custom-option-icon radio-wrapper">
+                              <label class="form-check-label custom-option-content" for="customRadioIcon3">
+                                <span class="custom-option-body">
+                                  <span class="icon-satisfied fs-1"></span>
+                                  <span class="custom-option-title">Satisfied</span>
+                                  <small>Text here.</small>
+                                </span>
+                                <input
+                                onchange="onRadioChange(this)"
+                                  name="customRadioIcon"
+                                  class="form-check-input"
+                                  type="radio"
+                                  value=""
+                                  id="customRadioIcon3"
+                                  checked />
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check custom-option custom-option-icon radio-wrapper">
+                              <label class="form-check-label custom-option-content" for="customRadioIcon4">
+                                <span class="custom-option-body">
+                                  <span class="icon-very_satisfied fs-1"></span>
+                                  <span class="custom-option-title">Very Satisfied</span>
+                                  <small>Text here.</small>
+                                </span>
+                                <input
+                                onchange="onRadioChange(this)"
+                                  name="customRadioIcon"
+                                  class="form-check-input"
+                                  type="radio"
+                                  value=""
+                                  id="customRadioIcon4"
+                                  checked />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- / Rating form  -->
+                        
+                        <div class="col-12 col-md-12">
+                          <label class="form-label" for="phone">Contact Number</label>
+                          <input type="text" id="phone" class="form-control phone-mask" placeholder="658 799 8941" aria-label="658 799 8941">
+                        </div>
+
+                        <div class="col-12">
+                          <label class="form-label" for="comments">Comment</label>
+                          <textarea name="comments" class="form-control" id="comments" rows="2" placeholder="add comments"></textarea>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                          <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                          <button
+                            type="reset"
+                            class="btn btn-label-secondary"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                            Cancel
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ Comment Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="./assets/vendor/libs/jquery/jquery.js"></script>
@@ -889,6 +1139,25 @@ window.onload = function() {
     uploadContainers[i].classList.add('no-blur');
   }
 };
+</script>
+
+<script>
+  function onRadioChange(radio) {
+      var resultElement = document.querySelector('.result');
+
+      // Remove 'selected' class from all 'radio-wrapper' divs
+      var radioWrappers = document.querySelectorAll('.radio-wrapper');
+      for (var i = 0; i < radioWrappers.length; i++) {
+          radioWrappers[i].classList.remove('checked');
+      }
+
+      // Add 'selected' class to the previous sibling 'radio-wrapper' div
+      var parentRadioWrapper = radio.closest('.radio-wrapper');
+      parentRadioWrapper.classList.add('checked');
+
+      // Update the result text
+      resultElement.textContent = 'checked Option: ' + radio.value;
+  }
 </script>
 
 

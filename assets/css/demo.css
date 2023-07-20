@@ -143,9 +143,13 @@
 
 body::selection,
 div::selection,
+a::selection,
+label::selection,
 p::selection,
 ul::selection,
+ol::selection,
 h5::selection,
+span::selection,
 li::selection  {
   background: #960948 !important;
   color: #fff !important;
@@ -915,4 +919,45 @@ hr{
 
 .details .badge{
   border-radius: 0.85rem;
+  font-size: 0.95em;
+}
+
+/* btn-text-secondary */
+.btn-text-secondary {
+  color: #8a8d93
+}
+
+.btn-text-secondary.waves-effect .waves-ripple {
+  background: radial-gradient(rgba(138, 141, 147, 0.2) 0, rgba(138, 141, 147, 0.3) 40%, rgba(138, 141, 147, 0.4) 50%, rgba(138, 141, 147, 0.5) 60%, rgba(255, 255, 255, 0) 70%)
+}
+
+.btn-text-secondary:hover {
+  border-color: rgba(0,0,0,0);
+  background: #f7f7f7;
+  color: #8a8d93
+}
+
+.btn-text-secondary:focus,.btn-text-secondary.focus {
+  color: #8a8d93;
+  background: #f3f4f4
+}
+
+.btn-text-secondary:active,.btn-text-secondary.active,.btn-text-secondary.show.dropdown-toggle,.show>.btn-text-secondary.dropdown-toggle {
+  color: #8a8d93 !important;
+  background: #edeeef !important;
+  border-color: rgba(0,0,0,0) !important
+}
+
+.btn-group .btn-text-secondary,.input-group .btn-text-secondary {
+  border-right: 1px solid #edeeef;
+  border-left: 1px solid #edeeef
+}
+
+.form-label, .col-form-label {
+  font-size: 0.95rem;
+}
+
+span.input-group-text{
+  align-items: flex-start;
+  padding-top: 12px;
 }
