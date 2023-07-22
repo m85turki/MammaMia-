@@ -18350,7 +18350,7 @@ html:not([dir=rtl]) .menu-horizontal .menu-sub .menu-sub .menu-item .menu-link {
     float: left;
   }
   .layout-navbar .navbar-nav .nav-item.dropdown .badge-notifications {
-    top: auto;
+    top: 0.5rem;
   }
   .layout-navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
     position: absolute;

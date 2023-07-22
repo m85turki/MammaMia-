@@ -51,6 +51,8 @@
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
 
+    <link href="./assets/vendor/libs/splide/css/splide-core.min.css" rel="stylesheet" type="text/css">
+
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -208,7 +210,7 @@
 
           <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
             <div class="container-fluid">
-              <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0">
+              <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-none">
                 <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                   <i class="bx bx-menu bx-sm"></i>
                 </a>
@@ -483,56 +485,90 @@
                   </div>
                 </div>
                 <div class="col-12 col-xl-6 order-1 order-xl-2 d-flex justify-content-center align-items-center pb-0">
-                  <div>
+                  <div class="w-100">
                     <div class="logo mx-auto">
                       <img src="./assets/img/branding/logo.svg" alt="">
                     </div>
-                    <!-- categories -->
-                    <div class="d-flex flex-column categories">
-                      <!-- Content -->
-                      <div class="tabs d-flex flex-row align-items-stretch mt-4 flex-nowrap bg-f">
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(1)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i food-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2">
-                            FOOD
-                          </div>
-                        </div>
-                  
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(2)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i appetizer-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2 active">
-                            APPETIZER
-                          </div>
-                        </div>
-                  
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(3)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i drink-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2">
-                            DRINK
-                          </div>
-                        </div>
-                  
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(4)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i hot-coco-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2">
-                            HOT COCO
-                          </div>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="underline"></div>
-                      </div>
-                      <!-- / Content -->
-                    </div>
-                    <!-- / categories -->
+
+
+                                        <!--  new update categories -->
+                                        <div class="pt-4 splide categories" id="splideTabsCategories" >
+                                          <div class="block-categories">
+                                            <div class="block-right"></div>
+                                            <div class="block-left"></div>
+                                            <div class="splide__track">
+                                              <ul class="tabs splide__list">
+                                                <li class="splide__slide" onclick="changeTab(1)">
+                                                  <div class="item d-flex flex-column align-items-center">
+                                                    <div class="icon-item mb-2">
+                                                      <div class="icon-i food-icon"></div>
+                                                    </div>
+                                                    <div class="tab name-item mt-auto pb-2 active">
+                                                      FOOD
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="splide__slide" onclick="changeTab(2)">
+                                                  <div class="item d-flex flex-column align-items-center">
+                                                    <div class="icon-item mb-2">
+                                                      <div class="icon-i appetizer-icon"></div>
+                                                    </div>
+                                                    <div class="tab name-item mt-auto pb-2 ">
+                                                      APPETIZER
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="splide__slide" onclick="changeTab(3)">
+                                                  <div class="item d-flex flex-column align-items-center">
+                                                    <div class="icon-item mb-2">
+                                                      <div class="icon-i drink-icon"></div>
+                                                    </div>
+                                                    <div class="tab name-item mt-auto pb-2">
+                                                      DRINK
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="splide__slide" onclick="changeTab(4)">
+                                                  <div class="item d-flex flex-column align-items-center">
+                                                    <div class="icon-item mb-2">
+                                                      <div class="icon-i hot-coco-icon"></div>
+                                                    </div>
+                                                    <div class="tab name-item mt-auto pb-2">
+                                                      HOT COCO
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="splide__slide" onclick="changeTab(5)">
+                                                  <div class="item d-flex flex-column align-items-center">
+                                                    <div class="icon-item mb-2">
+                                                      <div class="icon-i hot-coco-icon"></div>
+                                                    </div>
+                                                    <div class="tab name-item mt-auto pb-2">
+                                                      HOT COCO
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="splide__slide" onclick="changeTab(6)">
+                                                  <div class="item d-flex flex-column align-items-center">
+                                                    <div class="icon-item mb-2">
+                                                      <div class="icon-i hot-coco-icon"></div>
+                                                    </div>
+                                                    <div class="tab name-item mt-auto pb-2">
+                                                      HOT COCO
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="underline"></li>
+                                              </ul>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                    <!-- / new update categories -->
+                
+
+
+
                   </div>
   
                 </div>
@@ -586,11 +622,14 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <!-- Splide -->
+    <script src="./assets/vendor/libs/splide/js/splide.min.js"></script>
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 
     <!-- Page JS -->
+    
     <script>
 
       // Get the element you want to add the class to
@@ -617,42 +656,64 @@
   </script>
 
     <!-- Tabs -->
-  <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var activeTab = document.querySelector('.tab.active');
-            var underline = document.querySelector('.underline');
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var activeTab = document.querySelector('.tab.active');
+        var underline = document.querySelector('.underline');
 
-            var activeTabRect = activeTab.getBoundingClientRect();
-            var underlineRect = underline.parentElement.getBoundingClientRect();
+        var activeTabRect = activeTab.getBoundingClientRect();
+        var underlineRect = underline.parentElement.getBoundingClientRect();
 
-            var underlineTransform = activeTabRect.left - underlineRect.left;
-            var underlineWidth = activeTabRect.width;
+        var underlineTransform = activeTabRect.left - underlineRect.left;
+        var underlineWidth = activeTabRect.width;
 
-            underline.style.transform = 'translateX(' + underlineTransform + 'px)';
-            underline.style.width = underlineWidth + 'px';
-        });
+        underline.style.transform = 'translateX(' + underlineTransform + 'px)';
+        underline.style.width = underlineWidth + 'px';
+    });
 
-        function changeTab(tabIndex) {
-            var tabs = document.getElementsByClassName('tab');
-            var underline = document.querySelector('.underline');
+    function changeTab(tabIndex) {
+        var tabs = document.getElementsByClassName('tab');
+        var underline = document.querySelector('.underline');
 
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove('active');
-            }
-
-            tabs[tabIndex - 1].classList.add('active');
-
-            var activeTab = document.querySelector('.tab.active');
-            var activeTabRect = activeTab.getBoundingClientRect();
-            var underlineRect = underline.parentElement.getBoundingClientRect();
-
-            var underlineTransform = activeTabRect.left - underlineRect.left;
-            var underlineWidth = activeTabRect.width;
-
-            underline.style.transform = 'translateX(' + underlineTransform + 'px)';
-            underline.style.width = underlineWidth + 'px';
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
         }
-    </script>
 
-  </body>
+        tabs[tabIndex - 1].classList.add('active');
+
+        var activeTab = document.querySelector('.tab.active');
+        var activeTabRect = activeTab.getBoundingClientRect();
+        var underlineRect = underline.parentElement.getBoundingClientRect();
+
+        var underlineTransform = activeTabRect.left - underlineRect.left;
+        var underlineWidth = activeTabRect.width;
+
+        underline.style.transform = 'translateX(' + underlineTransform + 'px)';
+        underline.style.width = underlineWidth + 'px';
+    }
+</script>
+<!-- Splide -->
+<script>
+  //splideTabsCategories
+  new Splide('#splideTabsCategories', {
+    rewind: true,
+    autoplay: false,
+    direction: 'ltr',
+    pagination: false,
+    arrows: false,
+    //height: '80px',
+    cover: true,
+    pauseOnHover:true,
+    autoWidth: true,
+    autoheight: true,
+    
+    gap: '.7rem',
+
+    start: 0,
+    
+  }).mount();
+
+</script>
+
+</body>
 </html>

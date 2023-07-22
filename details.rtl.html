@@ -51,11 +51,9 @@
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
 
-
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="./assets/vendor/libs/owl-carousel/assets/owl.carousel.css">
     <link rel="stylesheet" href="./assets/vendor/libs/owl-carousel/assets/owl.theme.default.min.css">
-
 
 
     <!-- Page CSS -->
@@ -500,22 +498,20 @@
                 <div class="row gy-3 justify-content-center">
                   <div class="col-12 col-md-8">
                     <div class="card shadow overflow-x-hidden rounded-4">
+
+                      <div class="time-above-img">
+                        <span class="badge bg-label-secondary d-flex align-items-center justify-content-center">
+                          <i class='bx bx-time me-2'></i>
+                          5 Min
+                        </span>
+                      </div>
+
                       <div class="details-img rounded-4 img-vh effect-blur" style="background-image: url(./assets/img/products/1.jpg);"></div>
                     </div>
                   </div>
                   <div class="col-12 col-md-8">
                     <div class="d-flex">
-                   
                       <div class="text-price">3.25 JD</div>
-
-                      <div class="d-flex ms-auto">
-                        <span class="badge bg-label-secondary me-2 d-flex align-items-center justify-content-center">
-                          <i class='bx bx-time me-2'></i>
-                          5 Min
-                        </span>
-                        </div>
-                        
-  
                     </div>
 
                     <h5 class="mb-1">Lemon With Mint</h5>
@@ -528,9 +524,9 @@
                   
                   <div class="col-12 col-md-8">
                     <div class="row align-items-center">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-auto">
 
-                      <div class="quantity-control">
+                      <div class="main quantity-control">
                         <div class="d-flex align-items-center justify-content-between py-0 px-2">
                           <button type="button" class="btn btn-sm btn-icon rounded-pill minus">
                             <span class="icon-minus"></span>
@@ -544,14 +540,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-sm-auto col-md-auto col-lg-auto">
+                    <div class="col-12 col-sm-auto">
                       <button type="button" class="btn btn-md btn-text-secondary waves-effect w-100 px-0" data-bs-toggle="modal" data-bs-target="#addComments">
                         <span class="d-flex align-items-center justify-content-center">
                           <i class="bx bx-comment-dots me-2"></i>
                           Add comments
                       </button>
                     </div>
-                    <div class="col-12 col-sm-auto col-md-auto col-lg-auto">
+                    <div class="col-12 col-sm-auto">
                       <button type="button" class="btn btn-md btn-text-secondary waves-effect w-100 px-0" data-bs-toggle="modal" data-bs-target="#rating">
                         <span class="d-flex align-items-center justify-content-center">
                           <span class="icon-neutral me-2 fs-4"></span>
@@ -922,7 +918,7 @@
                                   type="radio"
                                   value=""
                                   id="customRadioIcon1"
-                                  checked />
+                                  />
                               </label>
                             </div>
                           </div>
@@ -941,7 +937,7 @@
                                   type="radio"
                                   value=""
                                   id="customRadioIcon2"
-                                  checked />
+                                  />
                               </label>
                             </div>
                           </div>
@@ -960,7 +956,7 @@
                                   type="radio"
                                   value=""
                                   id="customRadioIcon3"
-                                  checked />
+                                  />
                               </label>
                             </div>
                           </div>
@@ -979,7 +975,7 @@
                                   type="radio"
                                   value=""
                                   id="customRadioIcon4"
-                                  checked />
+                                  />
                               </label>
                             </div>
                           </div>
@@ -1015,41 +1011,6 @@
               <!--/ Comment Modal -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="./assets/vendor/libs/jquery/jquery.js"></script>
@@ -1078,67 +1039,64 @@
     <script src="./assets/js/main.js"></script>
 
 
-    <!-- Page JS -->
-    <script>
+<!-- Page JS -->
+<script>
 
-      // Get the element you want to add the class to
-      var element = document.getElementById("layout-navbar");
+  // Get the element you want to add the class to
+  var element = document.getElementById("layout-navbar");
 
-      // Add a scroll event listener to the window
-      window.addEventListener("scroll", function () {
-        // Check if the user has scrolled down
-        if (window.scrollY > 50) {
-          // Add the class to the element
-          element.classList.add("bg-f");
-        } else {
-          // Remove the class from the element
-          element.classList.remove("bg-f");
-        }
-      });
+  // Add a scroll event listener to the window
+  window.addEventListener("scroll", function () {
+    // Check if the user has scrolled down
+    if (window.scrollY > 50) {
+      // Add the class to the element
+      element.classList.add("bg-f");
+    } else {
+      // Remove the class from the element
+      element.classList.remove("bg-f");
+    }
+  });
 
-    </script>
+</script>
 
-    <script>
-      var owl = $('.owl-carousel');
-      owl.owlCarousel({
-        margin: 16,
-        autoHeight:true,
-        nav:true,
-        loop: true,
-        autoplay: true,
-        autoplayHoverPause: true,
-        dots:true,
-        responsive: {
-          0: {
-            items: 2
-          },
-          768: {
-            items: 3
-          },
-          992: {
-            items: 4
-          },
-          1200: {
-            items: 6
-          }
-        }
-      })
-    </script>
+<script>
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    margin: 16,
+    autoHeight:true,
+    nav:true,
+    loop: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    dots:true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      576: {
+        items: 3
+      },
+      768: {
+        items: 4
+      },
+      992: {
+        items: 5
+      },
+      1200: {
+        items: 6
+      },
+      1400: {
+        items: 6
+      }
+    }
+  })
+</script>
 
 <script>
   window.addEventListener('load', function() {
       var loading = document.getElementById('loading');
       loading.style.display = 'none';
   });
-</script>
-
-<script>
-window.onload = function() {
-  var uploadContainers = document.querySelectorAll('.effect-blur');
-  for (var i = 0; i < uploadContainers.length; i++) {
-    uploadContainers[i].classList.add('no-blur');
-  }
-};
 </script>
 
 <script>
@@ -1160,10 +1118,14 @@ window.onload = function() {
   }
 </script>
 
+<script>
+  window.onload = function() {
+    var uploadContainers = document.querySelectorAll('.effect-blur');
+    for (var i = 0; i < uploadContainers.length; i++) {
+      uploadContainers[i].classList.add('no-blur');
+    }
+  };
+  </script>
 
-
-
-
-
-  </body>
+</body>
 </html>

@@ -390,16 +390,16 @@ body {
 
 /**/
 .categories .item .icon-item .icon-i.food-icon{
-  background-image: url(../img/products/food-icon.jpg);
+  background-image: url(../img/products/food-icon.png);
 }
 .categories .item .icon-item .icon-i.appetizer-icon{
-  background-image: url(../img/products/appetizer-icon.jpg);
+  background-image: url(../img/products/appetizer-icon.png);
 }
 .categories .item .icon-item .icon-i.drink-icon{
-  background-image: url(../img/products/drink-icon.jpg);
+  background-image: url(../img/products/drink-icon.png);
 }
 .categories .item .icon-item .icon-i.hot-coco-icon{
-  background-image: url(../img/products/hot-coco-icon.jpg);
+  background-image: url(../img/products/hot-coco-icon.png);
 }
 /**/
 
@@ -489,6 +489,38 @@ body {
   color: #fff;
   font-size: 11pt;
 }
+
+
+.details .main.quantity-control{
+  width: 100%;
+}
+
+
+@media (min-width: 576px){
+  .details .main.quantity-control{
+    width: calc(33.3vw - 40px);
+  }
+  }
+
+@media (min-width: 768px){
+  .details .main.quantity-control{
+    width: calc(25vw - 62px);
+  }
+  }
+
+@media (min-width: 992px){
+  .details .main.quantity-control{
+    width: calc(20vw - 66px);
+  }
+}
+
+@media (min-width: 1200px){
+  .details .main.quantity-control{
+    width: calc(16.66vw - 62px);
+  }
+  }
+
+
 
 .listing{
   background: transparent;
@@ -885,12 +917,19 @@ hr{
 */
 
 .underline {
-  height: 2px;
+  height: 3px;
+  width: 0;
+  transition: width 0.3s, transform 0.3s;
   background-color: #960948;
   transition: transform 0.3s, width 0.3s;
-  position: relative;
+  position: absolute;
   bottom: 0;
+  left: 0;
 }
+
+
+
+
 
 .name-item {
   text-wrap: nowrap;
@@ -960,4 +999,66 @@ hr{
 span.input-group-text{
   align-items: flex-start;
   padding-top: 12px;
+}
+
+.fstyle{
+  background: #960948;
+  color: #edeeef;
+}
+
+
+.splide:not( .is-overflow ) .splide__list {
+  justify-content: center;
+}
+
+
+.time-above-img{
+  position: absolute;
+  z-index: 99;
+  bottom: 15px;
+  right: 15px;
+}
+
+[dir='rtl'] .time-above-img{
+  right: auto;
+  left: 15px;
+}
+
+.owl-carousel .owl-stage {
+  right: -1px;
+}
+
+.block-categories{
+  position: relative;
+}
+
+.block-categories .block-right{
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  width: 40px;
+  height: 100%;
+
+  background-image: linear-gradient(to right, rgba(248, 248, 248, 0) , rgba(248, 248, 248, 1));
+  z-index: 999;
+  pointer-events: none;
+}
+
+.block-categories .block-left{
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  width: 40px;
+  height: 100%;
+
+  background-image: linear-gradient(to right, rgba(248, 248, 248, 1) , rgba(248, 248, 248, 0));
+  z-index: 999;
+  pointer-events: none;
+}
+
+.splide__track{
+  padding-right:20px !important;
+  padding-left:20px !important;
+  margin-left: -20px;
+  margin-right: -20px;
 }

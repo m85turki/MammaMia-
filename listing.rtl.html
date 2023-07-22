@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-      <title>ماما ميا مقهى</title>
+    <title>Mamma Mia coffee room</title>
 
     <meta name="description" content="" />
 
@@ -51,6 +51,9 @@
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
 
+    <link href="./assets/vendor/libs/splide/css/splide-core.min.css" rel="stylesheet" type="text/css">
+    
+
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -59,8 +62,6 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
-
-
   
   </head>
 
@@ -110,74 +111,74 @@
               <!-- Apps & Pages -->
               <li class="menu-item">
                 <a href="#" class="menu-link">
-                  <div>الإفطار طوال اليوم</div>
+                  <div>All day breakfast</div>
                 </a>
               </li>
               <li class="menu-item">
                 <a href="#" class="menu-link">
-                  <div>سلطات طازجة</div>
+                  <div>Fresh salads</div>
                 </a>
               </li>
               <li class="menu-item">
                 <a href="#" class="menu-link">
-                  <div>مقبلات</div>
+                  <div>Appetizer</div>
                 </a>
               </li>
               <li class="menu-item">
                 <a href="#" class="menu-link">
-                  <div>الطبق الرئيسي</div>
+                  <div>Main course</div>
                 </a>
               </li>
             
             <!-- Drink -->
             <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <div>المشروبات</div>
+                <div>Drink</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item active">
                   <a href="#" class="menu-link">
-                    <div>قهوة واسبريسو</div>
+                    <div>Coffee & espresso</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>أمريكي</div>
+                    <div>American</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>كابتشينو - لاتيه</div>
+                    <div>Cappuccino - latte</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>الكاكاو الساخن</div>
+                    <div>Hot coco</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>ركن الشاي</div>
+                    <div>Tea corner</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>عصير و ديتوكس</div>
+                    <div>Juice & detox</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>قهوة مثلجة و فرابيه</div>
+                    <div>Iced coffee & frappee</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>مزاج الصودا</div>
+                    <div>Soda mood</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">
-                    <div>شاي مثلج</div>
+                    <div>Ice tea</div>
                   </a>
                 </li>
               </ul>
@@ -185,23 +186,15 @@
 
             <li class="menu-item">
               <a href="#" class="menu-link">
-                <div>الصحة والجمال (جديد)</div>
+                <div>Health & beauty ( new )</div>
               </a>
             </li>
 
             <li class="menu-item">
               <a href="#" class="menu-link">
-                <div>إضافة</div>
+                <div>Add</div>
               </a>
             </li>
-            
-            <li class="menu-item bell-call mb-3 mt-auto">
-              <a href="#" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-bell-ring"></i>
-                <div>Bell call</div>
-              </a>
-            </li>
-
           </ul>
         </aside>
         <!-- / Menu -->
@@ -209,6 +202,7 @@
         <!-- Layout container -->
         <div class="layout-page">
           <!-- Navbar -->
+
           <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
             <div class="container-fluid">
               <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0">
@@ -290,7 +284,7 @@
                     <ul class="dropdown-menu dropdown-menu-start py-0">
                       <li class="dropdown-menu-header border-bottom">
                         <div class="dropdown-header d-flex align-items-center justify-content-between py-3">
-                          <h6 class="text-body mb-0 me-auto">السعر الكلي</h6>
+                          <h6 class="text-body mb-0 me-auto">Total price</h6>
                           <div class="totlal-price">
                             30 
                             <span>
@@ -310,7 +304,7 @@
                               </div>
                               <div class="flex-grow-1">
                                 <div class="text-price">3.25 JD</div>
-                                <h5 class="mb-1">برتقال</h5>
+                                <h5 class="mb-1">Orange</h5>
                                 <div class="quantity-control">
                                   <div class="d-flex align-items-center justify-content-between py-0 px-2">
                                     <button type="button" class="btn btn-sm btn-icon rounded-pill minus">
@@ -337,14 +331,14 @@
                               </div>
                               <div class="flex-grow-1">
                                 <div class="text-price">3.25 JD</div>
-                                <h5 class="mb-1">ليمون بالنعناع</h5>
+                                <h5 class="mb-1">Lemon With Mint</h5>
                                 <div class="quantity-control empty">
                                   <div class="d-flex align-items-center justify-content-between py-0 px-2">
                                     <button type="button" class="btn btn-sm btn-icon rounded-pill minus">
                                       <span class="icon-minus"></span>
                                     </button>
                                     <div class="quantity-text">
-                                      طلب
+                                      Order
                                     </div>
                                     <button type="button" class="btn btn-sm btn-icon rounded-pill plus">
                                       <span class="icon-plus"></span>
@@ -366,7 +360,7 @@
                               </div>
                               <div class="flex-grow-1">
                                 <div class="text-price">3.25 JD</div>
-                                <h5 class="mb-1">جزر</h5>
+                                <h5 class="mb-1">Carrot</h5>
                                 <div class="quantity-control">
                                   <div class="d-flex align-items-center justify-content-between py-0 px-2">
                                     <button type="button" class="btn btn-sm btn-icon rounded-pill minus">
@@ -393,7 +387,7 @@
                               </div>
                               <div class="flex-grow-1">
                                 <div class="text-price">3.25 JD</div>
-                                <h5 class="mb-1">أفوكادو</h5>
+                                <h5 class="mb-1">Avocado</h5>
                                 <div class="quantity-control">
                                   <div class="d-flex align-items-center justify-content-between py-0 px-2">
                                     <button type="button" class="btn btn-sm btn-icon rounded-pill minus">
@@ -420,7 +414,7 @@
                               </div>
                               <div class="flex-grow-1">
                                 <div class="text-price">3.25 JD</div>
-                                <h5 class="mb-1">كرفس خاص</h5>
+                                <h5 class="mb-1">Special Celery</h5>
                                 <div class="quantity-control">
                                   <div class="d-flex align-items-center justify-content-between py-0 px-2">
                                     <button type="button" class="btn btn-sm btn-icon rounded-pill minus">
@@ -445,7 +439,7 @@
                       </li>
                       <li class="dropdown-menu-footer border-top">
                         <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3">
-                          تأكيد الطلبات
+                          Confirm orders
                         </a>
                       </li>
                     </ul>
@@ -458,6 +452,7 @@
 
             </div>
           </nav>
+
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
@@ -494,54 +489,84 @@
             <div class="listing">
 
 
-              <div class="d-flex align-items-center justify-content-center sticky-top bg-f">
-                    <!-- categories -->
-                    <div class="d-flex flex-column categories">
-                      <!-- Content -->
-                      <div class="tabs d-flex flex-row align-items-stretch mt-4 flex-nowrap bg-f">
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(1)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i food-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2">
-                            طعام
+         
+                  <div class="sticky-top bg-f">
+                    <!--  new update categories -->
+                        <div class="pt-4 splide categories" id="splideTabsCategories" >
+                          <div class="block-categories">
+                            <div class="block-right"></div>
+                            <div class="block-left"></div>
+                          <div class="splide__track">
+                            <ul class="tabs splide__list">
+                              <li class="splide__slide" onclick="changeTab(1)">
+                                <div class="item d-flex flex-column align-items-center">
+                                  <div class="icon-item mb-2">
+                                    <div class="icon-i food-icon"></div>
+                                  </div>
+                                  <div class="tab name-item mt-auto pb-2">
+                                    FOOD
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide" onclick="changeTab(2)">
+                                <div class="item d-flex flex-column align-items-center">
+                                  <div class="icon-item mb-2">
+                                    <div class="icon-i appetizer-icon"></div>
+                                  </div>
+                                  <div class="tab name-item mt-auto pb-2">
+                                    APPETIZER
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide" onclick="changeTab(3)">
+                                <div class="item d-flex flex-column align-items-center">
+                                  <div class="icon-item mb-2">
+                                    <div class="icon-i drink-icon"></div>
+                                  </div>
+                                  <div class="tab name-item mt-auto pb-2">
+                                    DRINK
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide" onclick="changeTab(4)">
+                                <div class="item d-flex flex-column align-items-center">
+                                  <div class="icon-item mb-2">
+                                    <div class="icon-i hot-coco-icon"></div>
+                                  </div>
+                                  <div class="tab name-item mt-auto pb-2 active">
+                                    HOT COCO
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide" onclick="changeTab(5)">
+                                <div class="item d-flex flex-column align-items-center">
+                                  <div class="icon-item mb-2">
+                                    <div class="icon-i hot-coco-icon"></div>
+                                  </div>
+                                  <div class="tab name-item mt-auto pb-2">
+                                    HOT COCO
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide" onclick="changeTab(6)">
+                                <div class="item d-flex flex-column align-items-center">
+                                  <div class="icon-item mb-2">
+                                    <div class="icon-i hot-coco-icon"></div>
+                                  </div>
+                                  <div class="tab name-item mt-auto pb-2 ">
+                                    HOT COCO
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="underline"></li>
+                            </ul>
+                            
                           </div>
                         </div>
-                  
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(2)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i appetizer-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2 active">
-                            مقبلات
-                          </div>
                         </div>
-                  
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(3)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i drink-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2">
-                            مشروبات
-                          </div>
-                        </div>
-                  
-                        <div class="item d-flex flex-column align-items-center mx-1 mx-md-2" onclick="changeTab(4)">
-                          <div class="icon-item mb-2">
-                            <div class="icon-i hot-coco-icon"></div>
-                          </div>
-                          <div class="tab name-item mt-auto pb-2">
-                            الكاكاو الساخن
-                          </div>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="underline"></div>
-                      </div>
-                      <!-- / Content -->
-                    </div>
-                    <!-- / categories -->
-              </div>
+                    <!-- / new update categories -->
+                  </div>                  
+
 
               <div class="container-xxl px-0 px-md-3">
                 <div class="row g-3 list-ul py-3">
@@ -744,11 +769,16 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <!-- Splide -->
+    <script src="./assets/vendor/libs/splide/js/splide.min.js"></script>
+
+
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 
     <!-- Page JS -->
+
     <script>
 
       // Get the element you want to add the class to
@@ -773,43 +803,45 @@
           loading.style.display = 'none';
       });
   </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          var activeTab = document.querySelector('.tab.active');
-          var underline = document.querySelector('.underline');
+   <!-- Tabs -->
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var activeTab = document.querySelector('.tab.active');
+        var underline = document.querySelector('.underline');
 
-          var activeTabRect = activeTab.getBoundingClientRect();
-          var underlineRect = underline.parentElement.getBoundingClientRect();
+        var activeTabRect = activeTab.getBoundingClientRect();
+        var underlineRect = underline.parentElement.getBoundingClientRect();
 
-          var underlineTransform = activeTabRect.right - underlineRect.right;
-          var underlineWidth = activeTabRect.width;
+        var underlineTransform = activeTabRect.left - underlineRect.left;
+        var underlineWidth = activeTabRect.width;
 
-          underline.style.transform = 'translateX(' + underlineTransform + 'px)';
-          underline.style.width = underlineWidth + 'px';
-      });
+        underline.style.transform = 'translateX(' + underlineTransform + 'px)';
+        underline.style.width = underlineWidth + 'px';
+    });
 
-      function changeTab(tabIndex) {
-          var tabs = document.getElementsByClassName('tab');
-          var underline = document.querySelector('.underline');
+    function changeTab(tabIndex) {
+        var tabs = document.getElementsByClassName('tab');
+        var underline = document.querySelector('.underline');
 
-          for (var i = 0; i < tabs.length; i++) {
-              tabs[i].classList.remove('active');
-          }
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+        }
 
-          tabs[tabIndex - 1].classList.add('active');
+        tabs[tabIndex - 1].classList.add('active');
 
-          var activeTab = document.querySelector('.tab.active');
-          var activeTabRect = activeTab.getBoundingClientRect();
-          var underlineRect = underline.parentElement.getBoundingClientRect();
+        var activeTab = document.querySelector('.tab.active');
+        var activeTabRect = activeTab.getBoundingClientRect();
+        var underlineRect = underline.parentElement.getBoundingClientRect();
 
-          var underlineTransform = activeTabRect.right - underlineRect.right;
-          var underlineWidth = activeTabRect.width;
+        var underlineTransform = activeTabRect.left - underlineRect.left;
+        var underlineWidth = activeTabRect.width;
 
-          underline.style.transform = 'translateX(' + underlineTransform + 'px)';
-          underline.style.width = underlineWidth + 'px';
-      }
-  </script>
+        underline.style.transform = 'translateX(' + underlineTransform + 'px)';
+        underline.style.width = underlineWidth + 'px';
+    }
+</script>
 
+    
 <script>
   window.onload = function() {
     var uploadContainers = document.querySelectorAll('.effect-blur');
@@ -818,6 +850,30 @@
     }
   };
   </script>
-  
-  </body>
+
+
+<!-- Splide -->
+<script>
+  //splideTabsCategories
+  new Splide('#splideTabsCategories', {
+    rewind: true,
+    autoplay: false,
+    //direction: 'rtl',
+    pagination: false,
+    arrows: false,
+    //height: '80px',
+    cover: true,
+    pauseOnHover:true,
+    autoWidth: true,
+    autoheight: true,
+    
+    gap: '.7rem',
+
+    start: 3,
+    
+  }).mount();
+
+</script>
+
+</body>
 </html>
