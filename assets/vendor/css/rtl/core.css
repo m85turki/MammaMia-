@@ -176,6 +176,10 @@ h5, .h5 {
   font-size: 1.125rem;
 }
 
+[dir='rtl'] h5, [dir='rtl'] .h5 {
+  font-size: 0.95rem;
+}
+
 h6, .h6 {
   font-size: 0.9375rem;
 }

@@ -176,7 +176,7 @@ body {
 
 /* street-lanterns */
 .street-lanterns{
-  width: 220px;
+  width: 210px;
   height: 200px;
   position: relative;
   background: url(../img/street-lanterns.jpg) no-repeat right top;
@@ -204,7 +204,7 @@ body {
 
 @media (min-width: 768px){
   .street-lanterns{
-    height: 250px;
+    height: 240px;
   }
 }
 
@@ -227,7 +227,7 @@ body {
 
 
 .logo{
-  width: 155px;
+  width: 135px;
   transition: all 0.3s;
 }
 
@@ -236,7 +236,7 @@ body {
 
 @media (min-width: 1200px){
   .logo{
-    width: 175px;
+    width: 155px;
   }  
 }
 
@@ -348,6 +348,8 @@ body {
   font-family: 'Cinzel', serif;
   font-weight: 700;
   border-bottom: 1px solid #C2BBBB;
+  max-width: 500px;
+  margin: 0px auto;
 }
 
 
@@ -517,6 +519,7 @@ body {
 @media (min-width: 1200px){
   .details .main.quantity-control{
     width: calc(16.66vw - 62px);
+    max-width: 187px;
   }
   }
 
@@ -1034,7 +1037,7 @@ span.input-group-text{
 
 .block-categories .block-right{
   position: absolute;
-  right: -20px;
+  right: 0px;
   top: 0px;
   width: 40px;
   height: 100%;
@@ -1046,7 +1049,7 @@ span.input-group-text{
 
 .block-categories .block-left{
   position: absolute;
-  left: -20px;
+  left: 0px;
   top: 0px;
   width: 40px;
   height: 100%;
@@ -1057,8 +1060,31 @@ span.input-group-text{
 }
 
 .splide__track{
+  padding-right:0px !important;
+  padding-left:0px !important;
+  /*margin-left: -20px;
+  margin-right: -20px;*/
+}
+
+.splide__track{
   padding-right:20px !important;
   padding-left:20px !important;
-  margin-left: -20px;
-  margin-right: -20px;
+  /*margin-left: -20px;
+  margin-right: -20px;*/
 }
+
+@media (min-width: 576px){
+  .splide__track{
+    padding-right:20px !important;
+    padding-left:20px !important;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  .block-categories .block-left {
+    left: -20px;
+}
+.block-categories .block-right{
+  right: -20px;
+}
+  }
